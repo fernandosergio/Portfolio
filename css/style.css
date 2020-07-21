@@ -8,6 +8,7 @@
 .corpo {
     margin: auto;
     max-width: 80%;
+    min-width: 40%;
     background-color: #ffffff;
     padding: 1em;
     border-radius: 4px;
