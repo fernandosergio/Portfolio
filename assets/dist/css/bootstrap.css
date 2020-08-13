@@ -63,7 +63,22 @@ section {
 }
 
 header {
-    background: url(../../../imagem/navbar-imagem.png);
+    background-color: #343a40;
+}
+
+@media (min-width: 580px) {
+    header {
+        background: url(../../../imagem/navbar-imagem.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        background: url(../../../imagem/navbar-imagem.png) center no-repeat;
+        background-size: auto;
+        background-color: #343a40;
+    }
 }
 
 body {
