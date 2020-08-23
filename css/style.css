@@ -40,6 +40,10 @@
     text-decoration: none;
 }
 
+.bot:hover {
+    background-color: #0056b3;
+}
+
 .tit1 {
     font-weight: normal;
     text-align: center;
