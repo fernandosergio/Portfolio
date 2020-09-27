@@ -1,8 +1,12 @@
 @charset "utf-8";
 body {
-    padding: 1rem;
     background-color: #5e0b1b;
     color: #fff;
+}
+
+.corpo {
+    padding: .5rem;
+    margin-left: 4rem;
 }
 
 .cabecalho {
