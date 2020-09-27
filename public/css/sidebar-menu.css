@@ -3,11 +3,10 @@
     position: fixed;
     width: 60px;
     height: 100%;
-    background: #3e0748;
+    background: #41b8ea;
     transition: .5s ease-out;
     overflow: hidden;
     z-index: 4;
-    flex-wrap: nowrap;
 }
 
 .sidebar:hover,
@@ -24,12 +23,17 @@
     top: .3rem;
     width: 30px;
     height: 30px;
-    background-color: #ea1d63;
+    background-color: #ed2324;
     border-radius: .3rem;
-    font-size: 20pt;
+    font-size: 24pt;
     color: #212529;
     cursor: pointer;
     z-index: 5;
+    transition: .5s ease-out;
+}
+
+.fecha:hover {
+    color: #fff;
 }
 
 .fecha.active {
@@ -47,10 +51,12 @@
     position: relative;
     width: 100%;
     list-style: none;
+    font-size: 13pt;
+    transition: .5s ease-out;
 }
 
 .sidebar ul li:hover {
-    background-color: #ea1d63;
+    text-shadow: 0 0 4px #fff;
 }
 
 .sidebar ul li a {
@@ -59,6 +65,7 @@
     width: 100%;
     display: flex;
     text-decoration: none;
+    font-weight: bold;
     color: #fff;
 }
 
