@@ -3,6 +3,17 @@ body {
     background: #f15c40;
 }
 
+.menu {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    text-align: start;
+}
+
+.menu:hover {
+    box-shadow: 0 0 4px #fff;
+}
+
 .corpo {
     padding: .5rem;
     margin-left: 4rem;
