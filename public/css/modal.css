@@ -6,10 +6,14 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, .5);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 5;
+}
+
+.modal-container.mostrar {
+    display: flex;
 }
 
 .modal {
@@ -58,6 +62,10 @@
 .botoes {
     margin-top: .5rem;
     text-align: center;
+    display: flex;
+    padding: .3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .botoes button {
@@ -67,10 +75,12 @@
     font: inherit;
     background-color: #138AF2;
     cursor: pointer;
+    transition: .4s ease-out;
 }
 
 .botoes button:hover {
-    background-color: ;
+    background-color: #0056b3;
+    color: #fff;
 }
 
 .botoes svg {
