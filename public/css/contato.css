@@ -1,9 +1,52 @@
 @charset "utf-8";
 body {
-    background: #ed2324;
+    background: #f15c40;
 }
 
 .corpo {
     padding: .5rem;
     margin-left: 4rem;
+    text-align: center;
+    font-size: 14pt;
+    color: #fff;
+    text-shadow: 0 0 4px black;
+}
+
+.contatinho {
+    padding: .2rem;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.contatinho p {
+    transition: .3s ease-out;
+}
+
+h1,
+img,
+a,
+.contatinho p {
+    transition: .3s ease-out;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    margin-top: 3rem;
+    font-style: italic;
+    font-size: 13pt;
+    transition: .3s ease-out;
+}
+
+footer:hover,
+.contatinho p:hover,
+a:hover {
+    text-shadow: 0 0 4px #fff;
 }
