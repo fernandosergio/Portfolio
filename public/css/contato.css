@@ -1,0 +1,9 @@
+@charset "utf-8";
+body {
+    background: #ed2324;
+}
+
+.corpo {
+    padding: .5rem;
+    margin-left: 4rem;
+}
