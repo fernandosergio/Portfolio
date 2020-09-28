@@ -1,14 +1,17 @@
 @charset "utf-8";
 body {
     background-color: #f15c40;
+    color: #fff;
+    text-shadow: 0 0 4px black;
 }
 
 .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
     cursor: pointer;
-    margin-left: 10rem;
+    position: absolute;
+    text-align: start;
+    color: #fff;
 }
 
 .menu:hover {
@@ -16,8 +19,8 @@ body {
 }
 
 .corpo {
-    width: 95%;
-    margin: auto;
+    width: 90%;
+    margin-left: 4rem;
     padding: 1rem;
     border-radius: 4px;
 }
@@ -32,13 +35,18 @@ body {
     box-shadow: 1px 1px #cecece;
 }
 
+.meio {
+    text-align: center;
+}
+
+h3 {
+    font: normal 10pt Arial;
+    text-align: right;
+}
+
 .bordinha {
     border-bottom: 1px solid black;
     margin-bottom: 1.3rem;
-}
-
-.bot:hover {
-    background-color: #0056b3;
 }
 
 .tit1 {
@@ -49,6 +57,8 @@ body {
 .tit2 {
     font-weight: normal;
     font-size: 17pt;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .texto {
