@@ -25,6 +25,7 @@
     border: 2px solid #cecece;
     border-radius: .3rem;
     position: relative;
+    animation: animacao .3s ease-out;
 }
 
 .setinha {
@@ -87,4 +88,15 @@
     cursor: pointer;
     margin: 0 1.5rem;
     color: #212529;
+}
+
+@keyframes animacao {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
