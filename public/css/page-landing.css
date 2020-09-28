@@ -48,7 +48,7 @@ body {
     height: 17rem;
     border-radius: .2rem;
     margin-bottom: .5rem;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.356);
 }
 
 .content,
