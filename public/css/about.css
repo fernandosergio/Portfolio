@@ -14,3 +14,45 @@ body {
 .menu:hover {
     box-shadow: 0 0 4px #fff;
 }
+
+.corpo {
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.imagem {
+    max-width: 70vw;
+    display: block;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px #cecece;
+}
+
+.bordinha {
+    border-bottom: 1px solid black;
+    margin-bottom: 1.3rem;
+}
+
+.bot:hover {
+    background-color: #0056b3;
+}
+
+.tit1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.tit2 {
+    font-weight: normal;
+    font-size: 17pt;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 13pt;
+    text-indent: 2rem;
+}
