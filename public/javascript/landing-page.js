@@ -3,9 +3,13 @@
 const modal = document.querySelector('.modal-container')
 const imagemGrande = document.querySelector('.imagem-grande')
 
-const imagem = document.querySelectorAll('.imagem')
 const corzinha = document.querySelectorAll('.titulo,.descricao,.tecnologias')
+corzinha.forEach((elemento) => {
+    elemento.style.backgroundColor = 'inherit'
+    elemento.style.border = 'none'
+})
 
+const imagem = document.querySelectorAll('.imagem')
 const [loteria, noteSaves, pomodoro, borderRadius] = imagem
 
 let botoes = document.querySelector('.botoes')
@@ -15,10 +19,7 @@ const diminui = document.querySelectorAll('.bi-arrows-angle-contract')
 
 window.onload = () => {
 
-    corzinha.forEach((elemento) => {
-        elemento.style.backgroundColor = 'inherit'
-        elemento.style.border = 'none'
-    })
+
 
     diminui.forEach((elemento) => {
         elemento.addEventListener('click', () => {
@@ -83,34 +84,35 @@ window.onload = () => {
         })
     }
 
-    function aumenta(imagem, site, repositorio) {
-        const quantos = imagemGrande.children
+}
 
-        if (quantos.length > 0) {
-            quantos[0].remove()
-        }
+function aumenta(imagem, site, repositorio) {
+    const quantos = imagemGrande.children
 
-        let img = document.createElement('img')
-
-        img.src = imagem.src
-        img.alt = imagem.alt
-
-        imagemGrande.append(img)
-        modal.classList.add('mostrar')
-
-        if (site.length == 0) {
-            console.log('eta nois')
-            irAoSite.children[0].disabled = true
-        } else {
-            irAoSite.children[0].disabled = false
-        }
-
-        irAoSite.href = ''
-        irAoRepositorio.href = ''
-
-        irAoSite.href = site
-        irAoRepositorio.href = repositorio
-
-
+    if (quantos.length > 0) {
+        quantos[0].remove()
     }
+
+    let img = document.createElement('img')
+
+    img.src = imagem.src
+    img.alt = imagem.alt
+
+    imagemGrande.append(img)
+    modal.classList.add('mostrar')
+
+    if (site.length == 0) {
+        console.log('eta nois')
+        irAoSite.children[0].disabled = true
+    } else {
+        irAoSite.children[0].disabled = false
+    }
+
+    irAoSite.href = ''
+    irAoRepositorio.href = ''
+
+    irAoSite.href = site
+    irAoRepositorio.href = repositorio
+
+
 }
