@@ -21,7 +21,19 @@ h1 {
 }
 
 .contatinho p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: .3s ease-out;
+}
+
+.fotinha {
+    width: 10rem;
+}
+
+img {
+    width: 30px;
+    margin: .3rem;
 }
 
 h1,
