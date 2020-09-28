@@ -1,0 +1,80 @@
+@charset "uft-8";
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.modal {
+    width: 70%;
+    min-width: 15rem;
+    background: #dddcdc;
+    color: black;
+    padding: 1rem;
+    border: 2px solid #cecece;
+    border-radius: .3rem;
+    position: relative;
+}
+
+.setinha {
+    text-align: center;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border-radius: .3rem;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.setinha svg {
+    color: #fff;
+}
+
+.setinha svg,
+.botoes svg {
+    font-size: 15pt;
+    border-radius: .3rem;
+    transition: .3s ease-out;
+    width: 30px;
+    height: 30px;
+}
+
+.setinha:hover,
+.botoes svg:hover {
+    background-color: #9ca0a0;
+}
+
+.imagem-grande img {
+    width: 100%;
+}
+
+.botoes {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.botoes button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: .4rem;
+    font: inherit;
+    background-color: #138AF2;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: ;
+}
+
+.botoes svg {
+    cursor: pointer;
+    margin: 0 1.5rem;
+    color: #212529;
+}
