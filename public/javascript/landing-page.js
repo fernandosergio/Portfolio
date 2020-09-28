@@ -16,8 +16,9 @@ diminui.forEach((elemento) => {
     })
 })
 
-document.querySelector('.modal-container').addEventListener('click', () => {
-    modal.classList.remove('mostrar')
+document.getElementById('modal-container').addEventListener('click', (e) => {
+    if (e.target.id == 'modal-container')
+        modal.classList.remove('mostrar')
 })
 
 if (loteria) {
