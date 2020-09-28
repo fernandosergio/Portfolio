@@ -84,6 +84,14 @@
     color: #fff;
 }
 
+.botoes button:disabled {
+    background-color: #cecece;
+}
+
+.botoes button:disabled:hover {
+    cursor: default;
+}
+
 .botoes svg {
     cursor: pointer;
     margin: 0 1.5rem;

@@ -6,6 +6,9 @@ const imagemGrande = document.querySelector('.imagem-grande')
 const imagem = document.querySelectorAll('.imagem')
 const [loteria, noteSaves, pomodoro, borderRadius] = imagem
 
+let botoes = document.querySelector('.botoes')
+const [irAoSite, svg, irAoRepositorio] = botoes.children
+
 const diminui = document.querySelectorAll('.bi-arrows-angle-contract')
 diminui.forEach((elemento) => {
     elemento.addEventListener('click', () => {
@@ -14,42 +17,58 @@ diminui.forEach((elemento) => {
 })
 
 if (loteria) {
+
+    const urlSite = 'https://www.verificarresultadoloteria.com.br/'
+    const urlRep = 'https://github.com/fernandosergio/Verificador-de-loteria'
+
     const loteriaImagem = loteria.children[0]
     const loteriaZoomin = loteria.children[1]
 
     loteriaZoomin.addEventListener('click', () => {
-        aumenta(loteriaImagem)
+        aumenta(loteriaImagem, urlSite, urlRep)
     })
 }
 
 if (noteSaves) {
+
+    const urlSite = ''
+    const urlRep = 'https://github.com/fernandosergio/note-saves'
+
     const noteSavesImagem = noteSaves.children[0]
     const noteSavesZoomIn = noteSaves.children[1]
 
     noteSavesZoomIn.addEventListener('click', () => {
-        aumenta(noteSavesImagem)
+        aumenta(noteSavesImagem, urlSite, urlRep)
     })
 }
 
 if (pomodoro) {
+
+    const urlSite = 'https://fernandosergio.github.io/Pomodore-Clock/'
+    const urlRep = 'https://github.com/fernandosergio/Pomodore-Clock'
+
     const pomodoroImagem = pomodoro.children[0]
     const pomodoZoomIn = pomodoro.children[1]
 
     pomodoZoomIn.addEventListener('click', () => {
-        aumenta(pomodoroImagem)
+        aumenta(pomodoroImagem, urlSite, urlRep)
     })
 }
 
 if (borderRadius) {
+
+    const urlSite = 'https://fernandosergio.github.io/Border-radius/'
+    const urlRep = 'https://github.com/fernandosergio/Border-radius'
+
     const borderRadiusImagem = borderRadius.children[0]
     const borderRadiusZoomIn = borderRadius.children[1]
 
     borderRadiusZoomIn.addEventListener('click', () => {
-        aumenta(borderRadiusImagem)
+        aumenta(borderRadiusImagem, urlSite, urlRep)
     })
 }
 
-function aumenta(imagem) {
+function aumenta(imagem, site, repositorio) {
     const quantos = imagemGrande.children
 
     if (quantos.length > 0) {
@@ -63,4 +82,19 @@ function aumenta(imagem) {
 
     imagemGrande.append(img)
     modal.classList.add('mostrar')
+
+    if (site.length == 0) {
+        console.log('eta nois')
+        irAoSite.children[0].disabled = true
+    } else {
+        irAoSite.children[0].disabled = false
+    }
+
+    irAoSite.href = ''
+    irAoRepositorio.href = ''
+
+    irAoSite.href = site
+    irAoRepositorio.href = repositorio
+
+
 }
