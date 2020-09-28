@@ -16,6 +16,10 @@ diminui.forEach((elemento) => {
     })
 })
 
+document.querySelector('.modal-container').addEventListener('click', () => {
+    modal.classList.remove('mostrar')
+})
+
 if (loteria) {
 
     const urlSite = 'https://www.verificarresultadoloteria.com.br/'
